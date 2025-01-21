@@ -1,5 +1,5 @@
 'use strict';
-// testing git comments
+// testing git comment
 
 define('admin/appearance/skins', [
 	'translator', 'alerts', 'settings', 'hooks', 'slugify',
