@@ -19,10 +19,12 @@ define('admin/appearance/skins', [
 					});
 					highlightSelectedTheme(app.config.bootswatchSkin);
 				}
+				// Nest loop 2
 			});
 			settings.load('custom-skins', $('.custom-skin-settings'));
 			Skins.render(bsData);
 		});
+		// Nest loop 1
 
 		$('#save-custom-skins').on('click', function () {
 			settings.save('custom-skins', $('.custom-skin-settings'), function () {
@@ -66,6 +68,7 @@ define('admin/appearance/skins', [
 					});
 				});
 			}
+			// nest loop 3
 		});
 	};
 
@@ -120,6 +123,7 @@ define('admin/appearance/skins', [
 				.html(current)
 				.removeClass('btn-primary')
 				.addClass('btn-success');
+				// loop  4 
 		});
 	}
 
